@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`MaterialDesign-element`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="MaterialDesign-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'MaterialDesign-element',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'MaterialDesign-element',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
