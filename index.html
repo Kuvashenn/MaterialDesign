@@ -17,6 +17,16 @@
       <link rel="import" href="bower_components/paper-radio-button/paper-radio-button.html">
       <link rel="import" href="bower_components/paper-radio-group/paper-radio-group.html">
       <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+      <link rel="import" href="bower_components/paper-input/paper-input.html">
+      <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+      <link rel="import" href="bower_components/paper-item/paper-item.html">
+      <link rel="import" href="bower_components/vaadin-date-picker/vaadin-date-picker.html">
+      
+      
+      
+      
+      
+      
       
       <scrip>
           <style type="text/css">
@@ -39,21 +49,33 @@
     
   </head>
   <body>
+      
     <paper-toolbar>
         <paper-icon-button icon="menu"></paper-icon-button>
         
-        <span flex>Messages</span>
-       
-       
-            </iron-icon>
+        <span flex>DocExpress</span>
         
     </paper-toolbar>
-    <paper-radio-group selected="green">
-    <paper-radio-button name="green" label="green">Green</paper-radio-button>
-    <paper-radio-button name="red" label="red">Red</paper-radio-button>
-    <paper-radio-button name="blue" label="blue">Blue</paper-radio-button>
-        </paper-radio-group>
-    <br />
-    <paper-checkbox name="terms">I agree to the terms and conditons</paper-checkbox>
+    <paper-dropdown-menu label="Title">
+        <paper-listbox class="dropdown-content">
+            <paper-item>Mr</paper-item>
+            <paper-item>Mrs</paper-item>
+            <paper-item>Dr</paper-item>
+            <paper-item>Miss</paper-item>
+            <paper-item>Master</paper-item>
+        </paper-listbox>
+    </paper-dropdown-menu>
+    <paper-input label="Name"></paper-input>
+    <paper-input label="Surname"></paper-input>
+    <paper-input label="Name"></paper-input>
+    <vaadin-date-picker min="1900-01-01" label="Date of Birth">Date of Birth</vaadin-date-picker>
+      
+      
+      
+      
+   
+    
+  
+      
   </body>
 </html>
